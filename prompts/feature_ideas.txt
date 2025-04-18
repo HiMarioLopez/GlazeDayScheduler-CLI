@@ -1,0 +1,81 @@
+### 1. **Pausing or Skipping a Week**
+- **Scenario:** You want to skip a week (e.g., holidays, group trip, etc.).
+- **Feature:** Allow marking certain dates as “skip” so no one is glazed that week, and the schedule resumes after.
+
+---
+
+### 2. **Manual Overrides**
+- **Scenario:** You want to manually assign a specific person to a specific date (e.g., to celebrate a milestone).
+- **Feature:** Allow manual overrides for certain dates, then auto-schedule the rest.
+
+---
+
+### 3. **Multiple Glazings per Week**
+- **Scenario:** Large group, want to glaze two (or more) people per week.
+- **Feature:** Support for multiple glazings per interval.
+
+---
+
+### 4. **Rotating or Weighted Priority**
+- **Scenario:** Some friends want to be glazed more/less often, or you want to “weight” the schedule.
+- **Feature:** Add a “priority” or “frequency” field to the CSV.
+
+---
+
+### 5. **Handling Missed Glazings**
+- **Scenario:** A week is missed (e.g., you forgot, or the group was busy).
+- **Feature:** Option to “bump” the schedule forward, or reschedule the missed person.
+
+---
+
+### 6. **Anniversaries or Other Special Dates**
+- **Scenario:** Avoid glazings near not just birthdays, but also anniversaries, holidays, etc.
+- **Feature:** Allow a list of “avoid dates” in addition to birthdays.
+
+---
+
+### 7. **Notifications/Reminders**
+- **Scenario:** You want to be reminded who’s up next.
+- **Feature:** Integrate with email, Slack, Discord, or calendar reminders.
+
+---
+
+### 8. **Exporting/Sharing the Schedule**
+- **Scenario:** Share the schedule with the group.
+- **Feature:** Export as CSV, PDF, or Google Calendar event.
+
+---
+
+### 9. **Undo/Redo or Schedule History**
+- **Scenario:** You want to see previous versions of the schedule or undo a change.
+- **Feature:** Keep a history of changes or allow undo/redo.
+
+---
+
+### 10. **Friend “On Hold”**
+- **Scenario:** A friend is temporarily unavailable (travel, etc.).
+- **Feature:** Mark a friend as “on hold” so they’re skipped for a period, then re-added.
+
+---
+
+### 11. **Recurring Glazings (Multiple Cycles)**
+- **Scenario:** After everyone’s been glazed, start a new cycle, but maybe shuffle the order.
+- **Feature:** Support for multiple cycles, with optional shuffling or re-optimization.
+
+---
+
+### 13. **Friend “Graduation”**
+- **Scenario:** A friend leaves the group but you want to give them a “farewell glaze” before they go.
+- **Feature:** Schedule a special send-off before removing them.
+
+---
+
+### 14. **Integration with Group Chat Bots**
+- **Scenario:** Announce the weekly glaze in a group chat automatically.
+- **Feature:** Integrate with Slack, Discord, or WhatsApp bots.
+
+---
+
+### 15. **Preferred Names (or Nicknames)***
+- **Scenario:** Tons of folks have a preferred name they'd like to use (e.g. Gleen vs Eileen)
+- **Feature:** Add a preferred name column to the input and parse as needed during schedule generation.

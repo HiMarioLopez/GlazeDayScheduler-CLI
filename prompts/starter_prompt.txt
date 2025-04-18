@@ -1,0 +1,42 @@
+**Starter Prompt for Glaze Day Scheduler (CLI) Project**
+
+---
+
+I'm working on a quirky side project called **Glaze Day Scheduler (CLI)**. The idea is to help me schedule a weekly "glazing" (shout-out/celebration) for each friend in my group, making sure:
+- Each friend is assigned a unique week before anyone repeats.
+- No one is glazed too close to their birthday (configurable buffer, e.g., 1 week before/after).
+- The schedule maximizes the distance between a friend's birthday and their glaze date.
+- If a friend leaves or joins the group, the schedule can be patched: past assignments are preserved, and only future assignments are re-optimized.
+- The tool should support skipping weeks, manual overrides, and possibly other features in the future.
+
+**Tech stack:**
+- Python 3
+- CSV for friend list input (`name,birthday`)
+- JSON for saving/loading the schedule
+- Command-line interface (no web UI yet)
+- Uses a greedy algorithm to maximize birthday distance for each assignment
+
+**Example CSV:**
+```
+name,birthday
+Alice,04-20
+Bob,07-15
+Charlie,12-01
+```
+
+**Example features I want to discuss or build:**
+- Adding/removing friends and patching the schedule
+- Skipping weeks or handling missed glazings
+- Exporting/sharing the schedule
+- Integrating with group chat bots or calendar reminders
+
+**When responding, please keep in mind:**
+- I want to minimize disruption to already-assigned glaze dates when patching the schedule.
+- I prefer simple, readable Python code.
+- Suggestions for new features or improvements are welcome!
+
+---
+
+**Please use this context for all follow-up questions, code, or design help related to this project.**
+
+---
