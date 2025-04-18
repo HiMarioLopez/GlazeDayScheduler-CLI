@@ -7,28 +7,45 @@ I'm working on a quirky side project called **Glaze Day Scheduler (CLI)**. The i
 - No one is glazed too close to their birthday (configurable buffer, e.g., 1 week before/after).
 - The schedule maximizes the distance between a friend's birthday and their glaze date.
 - If a friend leaves or joins the group, the schedule can be patched: past assignments are preserved, and only future assignments are re-optimized.
-- The tool should support skipping weeks, manual overrides, and possibly other features in the future.
+- The tool includes fairness metrics to evaluate the distribution of glaze dates relative to birthdays.
+
+**Project Structure:**
+- `main.py`: CLI interface and core scheduling logic
+- `friends.py`: Friend data management
+- `scheduler.py`: Scheduling algorithms
+- `storage.py`: Schedule persistence
+- `metrics.py`: Fairness calculations and reporting
+- `utils.py`: Helper functions
+- `data/`: Input data directory
+- `output/`: Generated schedules and metrics
+- `docs/`: Project documentation
 
 **Tech stack:**
 - Python 3
 - CSV for friend list input (`name,birthday`)
-- JSON for saving/loading the schedule
-- Command-line interface (no web UI yet)
+- JSON for saving/loading the schedule and metrics
+- Command-line interface
 - Uses a greedy algorithm to maximize birthday distance for each assignment
 
 **Example CSV:**
 ```
-name,birthday
-Alice,04-20
-Bob,07-15
-Charlie,12-01
+name,birthday,nickname
+Alice,04-20,A-Rod
+Bob,07-15,
+Charlie,12-01,Charles
 ```
 
-**Example features I want to discuss or build:**
-- Adding/removing friends and patching the schedule
-- Skipping weeks or handling missed glazings
-- Exporting/sharing the schedule
-- Integrating with group chat bots or calendar reminders
+**Key Features:**
+- Generate new schedules with configurable parameters
+- Patch existing schedules when friends leave or join
+- Configurable birthday buffer and interval between glazes
+- Fairness metrics including:
+  - Average distance from birthday
+  - Minimum/maximum distances
+  - Standard deviation of distances
+  - Per-friend statistics
+- JSON export of schedules and metrics
+- Multiple scheduling cycles support
 
 **When responding, please keep in mind:**
 - I want to minimize disruption to already-assigned glaze dates when patching the schedule.
