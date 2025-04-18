@@ -1,4 +1,4 @@
-# Glaze Day Scheduler (CLI)
+# 🥳🍩🗓️ Glaze Day Scheduler (CLI)
 
 <img src="./docs/HeadGlazer.jpeg" width="400" alt="Head Glazer Job Listing">
 
