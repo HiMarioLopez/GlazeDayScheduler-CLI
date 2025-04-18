@@ -4,7 +4,9 @@
 
 This you? If so, you might find this tool useful.
 
-A Python-based scheduling application that helps manage and optimize glaze day schedules while considering birthday distances and fairness metrics. This was a quick draft of an idea - I plan on porting most of this code over to TypeScript to run client-side on a site (I already bought the [www.glaze.day](www.glaze.day) domain).
+A Python-based scheduling application that helps manage and optimize glaze day schedules while considering birthday distances and fairness metrics.
+
+This was a quick draft of an idea - I plan on porting most of this functionality a proper website (I already bought the [www.glaze.day](www.glaze.day) domain). The new codebase will likely be React (TypeScript), with most of the basic functionality running on the client side.
 
 ## Overview
 
