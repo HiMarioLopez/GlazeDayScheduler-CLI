@@ -1,6 +1,10 @@
 # Glaze Day Scheduler (CLI)
 
-A Python-based scheduling application that helps manage and optimize glaze day schedules while considering birthday distances and fairness metrics.
+<img src="./docs/HeadGlazer.jpeg" width="400" alt="Head Glazer Job Listing">
+
+This you? If so, you might find this tool useful.
+
+A Python-based scheduling application that helps manage and optimize glaze day schedules while considering birthday distances and fairness metrics. This was a quick draft of an idea - I plan on porting most of this code over to TypeScript to run client-side on a site (I already bought the [www.glaze.day](www.glaze.day) domain).
 
 ## Overview
 
@@ -60,6 +64,22 @@ glaze_day_scheduler_cli/
 ## Input Format
 
 The application expects a CSV file with friend data. The default location is `data/friends.csv`.
+
+### CSV Format
+
+The friends CSV file should contain the following columns:
+
+- `name`: The friend's name (string)
+- `birthday`: The friend's birthday in MM-DD format (e.g., "12-12" for December 12th)
+- `nickname`: (Optional) A nickname for the friend
+
+Example CSV format:
+
+```csv
+name,birthday,nickname
+John Doe,12-12,
+Jane Smith,08-31,Janey
+```
 
 ## Output
 
