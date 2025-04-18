@@ -11,8 +11,8 @@ from .scheduler import (
     patch_schedule_with_new_friend,
 )
 
-DEFAULT_CSV_PATH = "glaze_day_scheduler_cli/data/friends.csv"
-OUTPUT_DIR = "./output"
+DEFAULT_CSV_PATH = "GlazeDayScheduler-CLI/data/friends.csv"
+OUTPUT_DIR = "./GlazeDayScheduler-CLI/output"
 SCHEDULE_FILENAME = "glaze_day_schedule.json"
 METRICS_FILENAME = "glaze_day_fairness_metrics.json"
 

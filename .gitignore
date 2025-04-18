@@ -1,6 +1,7 @@
 # Data
 
 data/friends_real.csv
+output/
 
 # Mac OS
 .DS_Store
